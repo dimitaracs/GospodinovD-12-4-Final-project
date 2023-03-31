@@ -1,0 +1,42 @@
+﻿<Window x:Class="GospodinovD_12_4_Final_project.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GospodinovD_12_4_Final_project"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="932" Width="430">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF5858B0"/>
+                <GradientStop Color="#FFBD2A2A" Offset="1"/>
+                <GradientStop Color="#FF208FCA" Offset="0.451"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="227*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+
+
+
+        <Label Content="Sign up"  HorizontalContentAlignment="Center" Foreground="black" FontSize="64" HorizontalAlignment="Center" Margin="0,108,0,674" Width="282" FontFamily="Source Code Pro Semibold"/>
+
+        <TextBlock  Text="Username"  FontSize="40" Foreground="Black" Margin="126,234,92,603" FontFamily="Sitka Heading" />
+        <TextBox x:Name="username" FontSize="35" Width ="338" Height="78" TextWrapping="Wrap"  VerticalAlignment="Top" Margin="46,286,46,0" Background="#beef00"/>
+
+        <TextBlock  Text="Password"  FontSize="40" Foreground="Black" Margin="129,383,74,454" FontFamily="Sitka Heading" />
+        <PasswordBox x:Name="password" FontSize="35" Width ="338" Height="78" VerticalAlignment="Top" Margin="46,441,46,0" Background="#beef00"/>
+
+        <TextBlock  Text="Repeat Password" TextAlignment="Center" FontSize="40" Foreground="Black" Margin="46,549,29,288" FontFamily="Sitka Heading" />
+        <PasswordBox x:Name="password2" FontSize="35" Width ="338" Height="78"   VerticalAlignment="Top" Margin="46,608,46,0" Background="#beef00"/>
+
+        <Button Content="Submit" HorizontalContentAlignment="Center" Height="80" VerticalAlignment="Top"  Margin="101,715,102,0" Background="#beef00" Click="Button_Click" FontSize="32" Foreground="Black"/>
+
+        <Button Content="Already have  &#xD; an account" HorizontalContentAlignment="Center" Height="50" VerticalAlignment="Top"  Margin="154,834,154,0" Background="#FF5858B0" Click="Button_Click_10" FontSize="15" Foreground="White"/>
+
+
+    </Grid>
+</Window>
