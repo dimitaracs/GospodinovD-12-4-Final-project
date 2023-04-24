@@ -1,0 +1,1 @@
+ALTER DATABASE [dg final pr.] MODIFY NAME = dgfinalpr

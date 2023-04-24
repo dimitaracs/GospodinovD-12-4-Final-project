@@ -35,7 +35,7 @@
 
         <Button Content="Submit" HorizontalContentAlignment="Center" Height="80" VerticalAlignment="Top"  Margin="101,715,102,0" Background="#beef00" Click="Button_Click" FontSize="32" Foreground="Black"/>
 
-        <Button Content="Already have  &#xD; an account" HorizontalContentAlignment="Center" Height="50" VerticalAlignment="Top"  Margin="154,834,154,0" Background="#FF5858B0" Click="Button_Click_10" FontSize="15" Foreground="White"/>
+        <Button Content="Already have &#xD; an account" HorizontalContentAlignment="Center" Height="44" VerticalAlignment="Top"  Margin="113,822,114,0" Background="#FF5858B0" Click="Button_Click_10" FontSize="15" Foreground="White" RenderTransformOrigin="0.3,0.674"/>
 
 
     </Grid>

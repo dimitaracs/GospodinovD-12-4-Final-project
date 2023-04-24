@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Microsoft.Data.SqlClient;
+using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,14 +17,66 @@ using System.Windows.Shapes;
 
 namespace GospodinovD_12_4_Final_project
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
+  
     public partial class MainWindow : Window
     {
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-EH77223; Initial Catalog = Project; Integrated Security = True");
+
+
+            if (password.Password != password2.Password)
+            {
+                MessageBox.Show("Different inputs of the password");
+                this.Close();
+            }
+            else
+            {
+                try
+                {
+                    if (sqlCon.State == ConnectionState.Closed)
+                    {
+                        sqlCon.Open();
+
+
+                        string query = "INSERT INTO SignUp (Username, Password, RepeatPassword) values ('" + this.username.Text + "','" + this.password.Password + "','" + this.password2.Password + "')";
+
+
+                        SqlCommand cmd = new SqlCommand(query, sqlCon);
+                        cmd.ExecuteNonQuery();
+
+
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+
+                finally
+                {
+                    sqlCon.Close();
+
+
+                   // LogIn g = new LogIn();
+                  //  g.Show();
+                   // this.Close();
+                }
+            }
+        }
+
+        private void Button_Click_10(object sender, RoutedEventArgs e)
+        {
+            //LogIn g = new LogIn();
+            //g.Show();
+            //this.Close();
         }
     }
 }
