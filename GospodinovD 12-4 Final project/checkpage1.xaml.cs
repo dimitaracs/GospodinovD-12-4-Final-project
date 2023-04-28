@@ -14,9 +14,7 @@ using System.Windows.Shapes;
 
 namespace GospodinovD_12_4_Final_project
 {
-    /// <summary>
-    /// Interaction logic for checkpage1.xaml
-    /// </summary>
+    
     public partial class checkpage1 : Window
     {
         public checkpage1()
@@ -192,6 +190,7 @@ namespace GospodinovD_12_4_Final_project
 
             try
             {
+
                 if (Convert.ToInt32(id.Text) > 1 && Convert.ToInt32(id.Text) < 100)
                 {
                     rankings rk = new rankings();
@@ -221,6 +220,11 @@ namespace GospodinovD_12_4_Final_project
 
         }
 
-
+        private void Button_Click_3(object sender, RoutedEventArgs e)
+        {
+            login l = new login();
+            l.Show();
+            this.Close();
+        }
     }
 }

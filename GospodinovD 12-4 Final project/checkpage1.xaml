@@ -20,21 +20,21 @@
 
         <Label Content="Welcome to IJF!"  Foreground="Black" FontSize="30" HorizontalAlignment="Left" Margin="113,103,0,689"/>
 
-        <Button Content="Seniors WRL" x:Name="Patients" HorizontalAlignment="Left" VerticalAlignment="Top" Width="178" Margin="24,213,0,0" Height="64" Background="#FFC5FAD5" Click="Button_Click_1" FontSize="24"/>
-        <Button  Content="Juniors WRL" x:Name="Doctors" HorizontalAlignment="Left" VerticalAlignment="Top" Width="178" Margin="226,213,0,0" Height="64" Background="#FFC5FAD5" Click="jnrs" FontSize="24"/>
+        <Button Content="Seniors WRL" x:Name="Patients" HorizontalAlignment="Left" VerticalAlignment="Top" Width="178" Margin="24,213,0,0" Height="64" Background="#beef00" Click="Button_Click_1" FontSize="24"/>
+        <Button  Content="Juniors WRL" x:Name="Doctors" HorizontalAlignment="Left" VerticalAlignment="Top" Width="178" Margin="226,213,0,0" Height="64" Background="#beef00" Click="jnrs" FontSize="24"/>
 
-        <Button Content="Kids WRL" x:Name="kids" HorizontalAlignment="Center" VerticalAlignment="Top" Width="178" Margin="0,327,0,0" Height="64" Background="#FFC5FAD5"  FontSize="24" Click="kids_Click" />
-        <Button Content="Check Nation &#xA;     Rankings" x:Name="NandW" VerticalAlignment="Top" Margin="126,444,126,0" Background="#FFC5FAD5"  FontSize="24" Width="178" Click="NandW_Click"/>
+        <Button Content="Kids WRL" x:Name="kids" HorizontalAlignment="Center" VerticalAlignment="Top" Width="178" Margin="0,327,0,0" Height="64" Background="#beef00"  FontSize="24" Click="kids_Click" />
+        <Button Content="Check Nation &#xA;     Rankings" x:Name="NandW" VerticalAlignment="Top" Margin="126,444,126,0" Background="#beef00"  FontSize="24" Width="178" Click="NandW_Click"/>
 
         <Label Content="Search by &#xA;Judoka ID"  Foreground="Black" FontSize="30" HorizontalAlignment="Left" Margin="24,577,0,215"/>
-        <TextBox x:Name="id" FontSize="35" Height="49" TextWrapping="Wrap"  VerticalAlignment="Top" Margin="24,691,259,0" Background="#FFC5FAD5" Width="147"/>
+        <TextBox x:Name="id" FontSize="35" Height="49" TextWrapping="Wrap"  VerticalAlignment="Top" Margin="24,691,259,0" Background="#beef00" Width="147"/>
         <Button Content="Submit" HorizontalContentAlignment="Center" Height="46" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="34,773,0,0" Background="#FF4831D4"  FontSize="32" Foreground="White" d:LayoutOverrides="HorizontalAlignment" Width="126" Click="Button_Click"/>
 
         <Label Content="Search by &#xA;   Nation "  Foreground="Black" FontSize="30" HorizontalAlignment="Left" Margin="257,577,0,215"/>
-        <TextBox x:Name="id2" FontSize="35" Height="49" TextWrapping="Wrap"  VerticalAlignment="Top" Margin="257,691,26,0" Background="#FFC5FAD5" Width="147"/>
+        <TextBox x:Name="id2" FontSize="35" Height="49" TextWrapping="Wrap"  VerticalAlignment="Top" Margin="257,691,26,0" Background="#beef00" Width="147"/>
         <Button Content="Submit" HorizontalContentAlignment="Center" Height="46" HorizontalAlignment="Left" VerticalAlignment="Top"  Margin="268,773,0,0" Background="#FF4831D4"  FontSize="32" Foreground="White" Width="126" Click="Button_Click_2"/>
 
-        <Button Content="Log Out" HorizontalContentAlignment="Center" Height="46" HorizontalAlignment="Center" VerticalAlignment="Top"  Margin="0,842,0,0" Background="#FF4831D4"  FontSize="32" Foreground="White" Width="126"/>
+        <Button Content="Log Out" HorizontalContentAlignment="Center" Height="46" HorizontalAlignment="Center" VerticalAlignment="Top"  Margin="0,842,0,0" Background="#FF4831D4"  FontSize="32" Foreground="White" Width="126" Click="Button_Click_3"/>
 
 
     </Grid>

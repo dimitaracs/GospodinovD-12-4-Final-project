@@ -27,7 +27,7 @@ namespace GospodinovD_12_4_Final_project
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            SqlConnection sqlCon = new SqlConnection(@"Data Source=DESKTOP-EH77223; Initial Catalog = Project; Integrated Security = True");
+            SqlConnection sqlCon = new SqlConnection(@"Data Source=LABSCIFIPC22\LOCALHOST;Initial Catalog=dgfinalpr;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
 
 
             if (password.Password != password2.Password)
@@ -44,7 +44,7 @@ namespace GospodinovD_12_4_Final_project
                         sqlCon.Open();
 
 
-                        string query = "INSERT INTO SignUp (Username, Password, RepeatPassword) values ('" + this.username.Text + "','" + this.password.Password + "','" + this.password2.Password + "')";
+                        string query = "INSERT INTO Signup1 (Username, Password1, Repeatpassword1) values ('" + this.username.Text + "','" + this.password.Password + "','" + this.password2.Password + "')";
 
 
                         SqlCommand cmd = new SqlCommand(query, sqlCon);
@@ -65,18 +65,18 @@ namespace GospodinovD_12_4_Final_project
                     sqlCon.Close();
 
 
-                   // LogIn g = new LogIn();
-                  //  g.Show();
-                   // this.Close();
+                    login g = new login();
+                    g.Show();
+                    this.Close();
                 }
             }
         }
 
         private void Button_Click_10(object sender, RoutedEventArgs e)
         {
-            //LogIn g = new LogIn();
-            //g.Show();
-            //this.Close();
+            login g = new login();
+            g.Show();
+            this.Close();
         }
     }
 }

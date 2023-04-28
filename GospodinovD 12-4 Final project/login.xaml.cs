@@ -26,10 +26,7 @@ namespace GospodinovD_12_4_Final_project
         {
 
 
-            //string username = this.username2.Text;
-            // string password = this.password3.Password;
-
-            SqlConnection sqlCon2 = new SqlConnection(@"Data Source=DESKTOP-EH77223; Initial Catalog = Project; Integrated Security = True");
+            SqlConnection sqlCon2 = new SqlConnection(@"Data Source=LABSCIFIPC22\LOCALHOST;Initial Catalog=dgfinalpr;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
 
             try
             {
@@ -38,7 +35,7 @@ namespace GospodinovD_12_4_Final_project
                     sqlCon2.Open();
 
 
-                string query = "SELECT COUNT(1) FROM SignUp where Username=@username and Password=@Password";
+                string query = "SELECT COUNT(1) FROM Signup1 where Username=@username and Password1=@Password";
 
 
                 SqlCommand cmd = new SqlCommand(query, sqlCon2);
@@ -49,9 +46,9 @@ namespace GospodinovD_12_4_Final_project
                 int count = Convert.ToInt32(cmd.ExecuteScalar());
                 if (count == 1)
                 {
-                    //CheckPage r = new CheckPage();
-                   // r.Welcome.Content = $"Welcome, {username2.Text}";
-                   // r.Show();
+                    checkpage1 r = new checkpage1();
+                    r.Welcome.Content = $"Welcome, {username2.Text}";
+                    r.Show();
                     this.Close();
 
                 }
