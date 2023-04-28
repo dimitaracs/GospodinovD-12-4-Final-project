@@ -29,7 +29,7 @@ namespace GospodinovD_12_4_Final_project
         {
             SqlConnection sqlCon = new SqlConnection(@"Data Source=LABSCIFIPC22\LOCALHOST;Initial Catalog=dgfinalpr;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False");
 
-
+            //
             if (password.Password != password2.Password)
             {
                 MessageBox.Show("Different inputs of the password");
